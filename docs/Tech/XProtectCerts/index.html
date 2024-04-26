@@ -3273,10 +3273,10 @@
 
 <h1 id="applying-secure-communications-between-xprotect-and-the-onguard-xprotect-access-service">Applying secure communications between XProtect and the OnGuard XProtect Access Service<a class="headerlink" href="#applying-secure-communications-between-xprotect-and-the-onguard-xprotect-access-service" title="Permanent link">&para;</a></h1>
 <p>In versions 4.2 and higher of the XProtect Access OnGuard integration, there is a tool built into the XProtect Access service to help users manage certificates. This process shows the steps required to generate, distribute, and configure the solution to secure communications between XProtect and the OnGuard XProtect Access Service.</p>
-<details class="abstract">
-<summary>Certificate Types</summary>
+<div class="admonition abstract">
+<p class="admonition-title">Certificate Types</p>
 <p>The process included below is for self-signed certificates. If you are using a third party certificate, from a commercial certificate provider, please skip ahead to step number ten below. Refer to the <a href="https://doc.milestonesys.com/latest/en-US/portal/htm/chapter-page-certificates-guide.htm">XProtect Certificate Guide</a> for any questions on dealing with certificates.</p>
-</details>
+</div>
 <ol>
 <li>On a server with restricted access, open PowerShell as an administrator and run the script below, to create a CA certificate.</br>
     <div class="highlight"><span class="filename">PowerShell</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c"># Run this script once, to create a certificate that can sign multiple server SSL certificates</span>

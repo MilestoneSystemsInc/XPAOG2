@@ -3274,7 +3274,7 @@
 
 
 <h1 id="working-with-the-pluginsettingsjson-configuration-file">Working with the PluginSettings.json configuration file<a class="headerlink" href="#working-with-the-pluginsettingsjson-configuration-file" title="Permanent link">&para;</a></h1>
-<p>The OnGuard XProtect Access Integration uses a .json file to control the configuration options for cardholder and visitor search, and alarm acknowledgment. This PluginSettings.json file is on the OnGuard server or the host of the OnGuard XProtect Access Service. The file location should be:</p>
+<p>The OnGuard XProtect Access Integration uses a .json file to control the configuration options for cardholder and visitor search, and alarm acknowledgment. This <strong>PluginSettings.json</strong> file is on the OnGuard server or the host of the OnGuard XProtect Access Service. The file location should be:</p>
 <div class="highlight"><span class="filename">PowerShell</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">C</span><span class="p">:\</span><span class="n">ProgramData</span><span class="p">\</span><span class="n">VideoOS</span><span class="p">\</span><span class="n">VideoOS</span><span class="p">.</span><span class="n">OnGuard</span><span class="p">.</span><span class="n">XPA</span><span class="p">.</span><span class="n">Service</span><span class="p">\</span><span class="n">Translators</span><span class="p">\</span><span class="n">OnGuard</span><span class="p">\</span><span class="n">PluginSettings</span><span class="p">.</span><span class="n">json</span>
 </code></pre></div>
 <p>Edit this file to change the data displayed for cardholders in the Smart Client, and change the display order for cardholder names. For example, the first name, middle name, and last name can appear in any order. It's also possible to change the data displayed for visitors. Lastly, the PluginSettings.json file can enable or disable the default alarm acknowledgment behavior.</p>
@@ -3286,10 +3286,10 @@
 <li>Restart the OnGuard XProtect Access Service.</li>
 <li>Restart the XProtect Event Server</li>
 </ol>
-<details class="warning">
-<summary>Upgrading versions?</summary>
+<div class="admonition warning">
+<p class="admonition-title">Upgrading versions?</p>
 <p>Upgrades from older versions of the OnGuard XProtect Access integration to versions 4.2 or newer may not automatically receive a fully detailed <strong>PluginSettings.json</strong> file. Delete the file, restart the OnGuard XProtect Access Service, send an event or perform a cardholder search.</p>
-</details>
+</div>
 
   
   

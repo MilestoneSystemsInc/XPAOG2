@@ -3283,8 +3283,8 @@
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span>
 </code></pre></div>
 <p>Change the false to true, save the file and restart the services.</p>
-<details class="abstract">
-<summary>Old alarm acknowledgement behavior explained</summary>
+<div class="admonition abstract">
+<p class="admonition-title">Old alarm acknowledgement behavior explained</p>
 <p>In older versions of the integration alarm status between XProtect and OnGuard was shared in a limited way. When alarms were closed in XProtect that state was shared with OnGuard. In the OnGuard system the same alarm would be acknowledged. Alarm status was shared in the opposite direction as well – from OnGuard to XProtect.</p>
 <p>Possible alarm states in XProtect and OnGuard weren't the same. In XProtect alarms could be new, acknowledged, set on hold, or closed. In OnGuard alarms were either active or acknowledged. For the XProtect Access OnGuard integration, acknowledged alarms in OnGuard were the same as closed alarms in XProtect. All other alarm states in XProtect were active alarms in OnGuard.</p>
 <table>
@@ -3306,7 +3306,7 @@
 </tbody>
 </table>
 <p>When alarms were acknowledged in OnGuard, the alarm was closed, and the associated alarm was also closed in XProtect. If the alarm was acknowledged within XProtect it would not change status in OnGuard. The status of the alarm in OnGuard would change when the alarm was closed in XProtect.</p>
-</details>
+</div>
 
 
 

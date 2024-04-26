@@ -3272,7 +3272,7 @@
 
 
 <h1 id="xprotect-access-instance-status-properties">XProtect Access instance status &amp; properties<a class="headerlink" href="#xprotect-access-instance-status-properties" title="Permanent link">&para;</a></h1>
-<p>Go to the Access Control menu in the directory tree of the XProtect Management Client. You can view status of all instances by selecting the root of the Access Control directory.</br></p>
+<p>Go to the <strong>Access Control</strong> menu in the directory tree of the XProtect Management Client. You can view status of all instances by selecting the root of the Access Control directory.</br></p>
 <p><img alt="MCAccessMenu" src="../img/CXAL.mc.node.png" /></p>
 <p>Select your OnGuard XProtect Access instance to view or edit the properties of the connection.</br></p>
 <p><img alt="GeneralSettings" src="../img/CXAL.inst.connect.png" /></p>
@@ -3358,7 +3358,7 @@
 <td>Default value is 900 seconds. Frequency of status updates retrieved for AC hardware devices. Increase this value for more consistent event processing throughput.</td>
 </tr>
 <tr>
-<td>Options – '[Legacy]' OnGuard SQL Server hostname:</td>
+<td>Options – [Legacy] OnGuard SQL Server hostname:</td>
 <td>SQL server hostname in systems upgraded from 3.X versions to the current 4.X version which doesn't require a SQL server hostname to establish the connection.</td>
 </tr>
 <tr>
@@ -3372,10 +3372,10 @@
 </tbody>
 </table>
 <p>You can verify that the integration module is now connected by looking at the access control tree.</p>
-<details class="warning">
-<summary>Trouble connecting using encrypted communication</summary>
+<div class="admonition warning">
+<p class="admonition-title">Trouble connecting using encrypted communication</p>
 <p>In scenarios where the OpenAccess service and the XProtect Access Service are located on the same server, the <strong>OpenAccess - Host</strong> field must contain the PC name of the server where the OpenAccess service is installed in order to use SSL encryption between the OpenAccess service and the Event Server. In these scenarios the process used to create the certificate specifies the PC name, and any other method of identification for the server - such as the IP address or the fully qualified domain name - will not work. Make sure to match the PC name with the data entered in the <strong>OpenAccess - Host</strong> field.</p>
-</details>
+</div>
 
 
 

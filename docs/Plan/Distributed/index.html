@@ -3277,8 +3277,8 @@
     A&gt;XProtect Site]:::XPClass &lt;--&gt;|XPA| B[Integration Server]:::XPClass
     B &lt;--&gt;|HTTPS| C(OnGuard Server):::XPClass
     classDef XPClass fill:#efb, stroke:#000, stroke-width:2px</code></pre>
-<details class="warning">
-<summary>NOT SUPPORTED - Many to one</summary>
+<div class="admonition warning">
+<p class="admonition-title">NOT SUPPORTED - Many to one</p>
 <p>For design, scaling, and performance reasons, Milestone doesn't support connecting multiple XProtect sites to the same Integration Server instance.</p>
 <pre class="mermaid"><code>flowchart LR
     A&gt;XProtect Site 1]:::XPClass &lt;--&gt;|XPA| B[Integration Server]:::XPClass
@@ -3286,7 +3286,7 @@
     D&gt;XProtect Site 2]:::XPClass &lt;--&gt;|XPA| B
     B[Integration Server]:::XPClass &lt;--&gt;|HTTPS| E(OnGuard Server):::XPClass
     classDef XPClass fill:#f57, stroke:#000, stroke-width:2px</code></pre>
-</details>
+</div>
 
 
 
