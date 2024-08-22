@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://www.MySite.local/Tech/PluginSettings.JSON/">
+        <link rel="canonical" href="https://www.MySite.local/Plan/DistES/">
       
       
-        <link rel="prev" href="../OnGuardCerts/">
+        <link rel="prev" href="../Federated/">
       
       
-        <link rel="next" href="../KnownLimitations/">
+        <link rel="next" href="../Distributed/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Working with the PluginSettings.json configuration file - OnGuard XProtect Access User Guide</title>
+        <title>Distributed Event Server system design - OnGuard XProtect Access User Guide</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#working-with-the-pluginsettingsjson-configuration-file" class="md-skip">
+        <a href="#distributed-event-server-system-design" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Working with the PluginSettings.json configuration file
+              Distributed Event Server system design
             
           </span>
         </div>
@@ -228,8 +228,6 @@
         <div class="md-main__inner md-grid">
           
             
-              
-                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -448,17 +446,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
@@ -477,7 +477,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -494,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Plan/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -520,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Plan/SingleSystemScenario/" class="md-nav__link">
+      <a href="../SingleSystemScenario/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -546,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Plan/MultipleSingleSystems/" class="md-nav__link">
+      <a href="../MultipleSingleSystems/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -572,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Plan/Federated/" class="md-nav__link">
+      <a href="../Federated/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -596,9 +596,35 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Plan/DistES/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    
+  
+    Distributed Event Server system design
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -613,6 +639,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#system-architecture-diagram-for-distributed-event-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System architecture diagram for distributed Event Server
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation-and-configuration-of-the-event-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation and configuration of the Event Server:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewall-on-the-xprotect-event-server-and-sql-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Firewall on the XProtect Event Server and SQL Server
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -624,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Plan/Distributed/" class="md-nav__link">
+      <a href="../Distributed/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -650,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Plan/SingleWIntSrv/" class="md-nav__link">
+      <a href="../SingleWIntSrv/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -676,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Plan/Clustered/" class="md-nav__link">
+      <a href="../Clustered/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -702,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Plan/Redundancy/" class="md-nav__link">
+      <a href="../Redundancy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -733,19 +812,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
@@ -764,7 +841,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -781,7 +858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../Tech/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -807,7 +884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../HardwareSupport/" class="md-nav__link">
+      <a href="../../Tech/HardwareSupport/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -833,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scalability/" class="md-nav__link">
+      <a href="../../Tech/Scalability/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -859,7 +936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../FIPS/" class="md-nav__link">
+      <a href="../../Tech/FIPS/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -885,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SegmentsExplained/" class="md-nav__link">
+      <a href="../../Tech/SegmentsExplained/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -911,7 +988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ConfigSegs/" class="md-nav__link">
+      <a href="../../Tech/ConfigSegs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -937,7 +1014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../UserSegs/" class="md-nav__link">
+      <a href="../../Tech/UserSegs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -963,7 +1040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SSOExplained/" class="md-nav__link">
+      <a href="../../Tech/SSOExplained/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -989,7 +1066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SecComExp/" class="md-nav__link">
+      <a href="../../Tech/SecComExp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1015,7 +1092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../XProtectCerts/" class="md-nav__link">
+      <a href="../../Tech/XProtectCerts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1041,7 +1118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../OnGuardCerts/" class="md-nav__link">
+      <a href="../../Tech/OnGuardCerts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1065,18 +1142,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Tech/PluginSettings.JSON/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1091,7 +1159,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1103,7 +1170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../KnownLimitations/" class="md-nav__link">
+      <a href="../../Tech/KnownLimitations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3299,31 +3366,51 @@
   
 
 
-<h1 id="working-with-the-pluginsettingsjson-configuration-file">Working with the PluginSettings.json configuration file<a class="headerlink" href="#working-with-the-pluginsettingsjson-configuration-file" title="Permanent link">&para;</a></h1>
-<p>The OnGuard XProtect Access Integration uses a .json file to control the configuration options for cardholder and visitor search, and alarm acknowledgment. This <strong>PluginSettings.json</strong> file is on the OnGuard server or the host of the OnGuard XProtect Access Service. The file location should be:</p>
-<div class="highlight"><span class="filename">PowerShell</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">C</span><span class="p">:\</span><span class="n">ProgramData</span><span class="p">\</span><span class="n">VideoOS</span><span class="p">\</span><span class="n">VideoOS</span><span class="p">.</span><span class="n">OnGuard</span><span class="p">.</span><span class="n">XPA</span><span class="p">.</span><span class="n">Service</span><span class="p">\</span><span class="n">Translators</span><span class="p">\</span><span class="n">OnGuard</span><span class="p">\</span><span class="n">PluginSettings</span><span class="p">.</span><span class="n">json</span>
-</code></pre></div>
-<p>Edit this file to change the data displayed for cardholders in the Smart Client, and change the display order for cardholder names. For example, the first name, middle name, and last name can appear in any order. It's also possible to change the data displayed for visitors. Lastly, the PluginSettings.json file can enable or disable the default alarm acknowledgment behavior.</p>
-<p>After editing and saving the .json file, changes take effect after the next restart of the OnGuard XProtect Access Service and the XProtect Event Server. Follow this process to edit the file:</p>
-<ol>
-<li>Complete the first cardholder search or receive the first access control event</li>
-<li>.json file is created with the default configuration.</li>
-<li>Edit the .json file to meet the new requirements.</li>
-<li>Restart the OnGuard XProtect Access Service.</li>
-<li>Restart the XProtect Event Server</li>
-</ol>
-<div class="admonition warning">
-<p class="admonition-title">Upgrading versions?</p>
-<p>Upgrades from older versions of the OnGuard XProtect Access integration to versions 4.2 or newer may not automatically receive a fully detailed <strong>PluginSettings.json</strong> file. Delete the file, restart the OnGuard XProtect Access Service, send an event or perform a cardholder search.</p>
+<h1 id="distributed-event-server-system-design">Distributed Event Server system design<a class="headerlink" href="#distributed-event-server-system-design" title="Permanent link">&para;</a></h1>
+<p>Video management systems engineered for increased event throughput will commonly include a distributed XProtect Event Server.  This is a system design scenario which places the XProtect Event Server in a standalone host server environment, which is specifically outside of the Management Server and/or Recording Server host environments.</p>
+<p>Below are the required system design details for integrating and configuring the system to support a distributed Event Server configuration.  These include the system design diagrams and data flow,  service account requirements,  and  firewall port requirements.</p>
+<h2 id="system-architecture-diagram-for-distributed-event-server">System architecture diagram for distributed Event Server<a class="headerlink" href="#system-architecture-diagram-for-distributed-event-server" title="Permanent link">&para;</a></h2>
+<p>The XProtect Access Plugin for XProtect should be installed on the Event Server. As in all other XProtect Access system design scenarios, the versions of the plugin on the XProtect system and the OnGuard system must match.</p>
+<p><img alt="Distributed Event Server system architecture diagram" src="../img/CXAL_DistES.png" width="50%" /></p>
+<h2 id="installation-and-configuration-of-the-event-server">Installation and configuration of the Event Server:<a class="headerlink" href="#installation-and-configuration-of-the-event-server" title="Permanent link">&para;</a></h2>
+<p>All services for XProtect on both the Management Server and Event Server need to be logged on and running as the same account. Testing confirmed that in a domain environment an account with administrative privileges on the XProtect system worked, and the default Network Service account on a Work Group environment worked.</p>
+<h2 id="firewall-on-the-xprotect-event-server-and-sql-server">Firewall on the XProtect Event Server and SQL Server<a class="headerlink" href="#firewall-on-the-xprotect-event-server-and-sql-server" title="Permanent link">&para;</a></h2>
+<p>Most of the ports in the list below are opened automatically by the standard XProtect installation programs. To note, firewall TCP port 1433 must be manually opened on the XProtect Event Server host machine. This port facilitates communication between the Event Server and the Microsoft SQL Server.</p>
+<p><strong>XProtect Event Server:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Inbound (TCP)</th>
+<th>Outbound (TCP)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><ul><li>1234</li><li>1235</li><li>1433</li><li>1434</li><li>9090</li><li>22331</li><li>22332</li><li>22333</li></ul></td>
+<td><ul><li>80</li><li>443</li><li>1433</li><li>1434</li></ul></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Microsoft SQL Server:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Inbound (TCP)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><ul><li>1433</li></ul></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition abstract">
+<p class="admonition-title">Full XProtect Port List</p>
+<p>To learn more about why specific ports need to be opened, and which other ports are required for all XProtect services, read this <a href="https://supportcommunity.milestonesys.com/s/article/List-of-TCP-and-UDP-ports-used-in-XProtect-Advanced-VMS-products?language=en_US">knowledge base article</a>.</p>
 </div>
 
-  
-  
 
 
-
-
-  
 
 
 
