@@ -3451,15 +3451,24 @@
 <h2 id="run-the-query">Run the query<a class="headerlink" href="#run-the-query" title="Permanent link">&para;</a></h2>
 <p>To accurately capture the peak event throughput the OnGuard system can withstand, it is recommended to pick a time range during which the system is known to have experienced high volume for events per second. The range of time for the query can be as small as a few hours, or as large as several weeks or more. The larger the range of data, the longer the query will take.</p>
 <ul>
-<li>Open SQL Server Management Studio and log into the OnGuard database.</li>
+<li>Open SQL Server Management Studio and connect to the SQL server.</li>
 <li>Right click on the OnGuard <strong>AccessControl</strong> database and choose <strong>New Query</strong> from the context menu.</li>
 </ul>
 <p><img alt="New Query" src="../img/CXAL.SQLNewQ.png" /></p>
 <ul>
 <li>Paste the text of the query into the New Query field.</li>
-<li>It is required to set a start and end date for the query. By default, the query will capture the last 10 hours of the database. The DECLARE @StartDate and DECLARE @EndDate lines set the start time as minus 11 hours from the current time, until minus 1 hour from the current time. To use specific date ranges, add hyphens to the top lines and remove the hyphens from the bottom lines. Set your start and end dates in 'YYYY-MM-DD HH:MM:SS' time format.</li>
+<li>It is required to set a start and end date for the query. </li>
 </ul>
-<p><img alt="Edit time range" src="../img/CXAL.SQLRange.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Setting query time range</p>
+<p>By default, the query will capture the last 10 hours of the database. The DECLARE @StartDate and DECLARE @EndDate lines set the start time as minus 11 hours from the current time, until minus 1 hour from the current time. </p>
+<blockquote>
+<p><img alt="Using default time range" src="../img/CXAL.SQLRangeDefault.png" /></p>
+<p>To use specific date ranges, add leading hyphens to the top lines and remove the leading hyphens from the bottom lines. Set your start and end dates in 'YYYY-MM-DD HH:MM:SS' time format.</p>
+<p><img alt="Using specific time range" src="../img/CXAL.SQLRangeUTC.png" />
+</p>
+</blockquote>
+</div>
 <ul>
 <li>Click the <strong>Execute</strong> button to generate the results of the query.</li>
 </ul>
